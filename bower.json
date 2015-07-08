@@ -1,0 +1,19 @@
+{
+  "name": "2.2-timeline",
+  "version": "0.0.0",
+  "authors": [
+    "Marvin Santiago <marvin.santiago@ymail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "~2.0.2011012602",
+    "fontawesome": "~4.3.0"
+  }
+}
