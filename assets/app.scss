@@ -27,7 +27,7 @@ $primary-color: #80C0E9;
     top: 0;
     bottom: 0;
     width: 10px;
-    background: #80C0E9;
+    background: #afdcf8;
     left: 20%;
     margin-left: -10px;
   }
@@ -37,8 +37,9 @@ $primary-color: #80C0E9;
   .timeline > li .timestamp {
     display: block;
     width: 25%;
-    padding-right: 100px;
+    // padding-right: 100px;
     position: absolute;
+    padding: 40px 80px 0 0;
   }
 .timeline > li .timestamp span {
     display: block;
@@ -53,7 +54,7 @@ $primary-color: #80C0E9;
     color: #3594cb;
 }
 
-.timeline >li:nth-child .timestamp span:last-child {
+.timeline >li:nth-child(odd) .timestamp span:last-child {
     color: #6cbfee;
 }
 
@@ -68,8 +69,14 @@ $primary-color: #80C0E9;
     position: relative;
     border-radius: 5px;
 }
-
-
+.timeline > li:nth-child(odd) .topic{
+    background: #6cbfee;
+}
+.timeline > li .topic h4 {
+    margin-top: 0px;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
 
 .timeline > li .topic:after {
     right: 100%;
