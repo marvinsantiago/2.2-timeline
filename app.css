@@ -1,0 +1,141 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(fontawesome/css/font-awesome.css);
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.timeline {
+  margin: auto;
+  padding: 20px 0 0 0;
+  list-style: none;
+  position: relative;
+  width: 80%; }
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 20%;
+  margin-left: -10px; }
+
+.timeline > li {
+  position: relative; }
+
+.timeline > li .timestamp {
+  display: block;
+  width: 25%;
+  position: absolute;
+  padding: 5px 100px 0 0; }
+
+.timeline > li .timestamp span {
+  display: block;
+  text-align: right; }
+
+.timeline > li .timestamp span:first-child {
+  font-size: 1em;
+  color: #bdd0db; }
+
+.timeline > li .timestamp span:last-child {
+  font-size: 3em;
+  color: #3594cb; }
+
+.timeline > li:nth-child(odd) .timestamp span:last-child {
+  color: #6cbfee; }
+
+.timeline > li .topic {
+  margin: 0 0 15px 25%;
+  background: #3594cb;
+  color: #fff;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.3;
+  position: relative;
+  border-radius: 5px; }
+
+.timeline > li:nth-child(odd) .topic {
+  background: #6cbfee; }
+
+.timeline > li .topic h4 {
+  margin-top: 0px;
+  padding: 5px 0 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+
+.timeline > li .topic:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right-color: #3594cb;
+  border-width: 10px;
+  top: 10px; }
+
+.timeline > li:nth-child(odd) .topic:after {
+  border-right-color: #5096c6; }
+
+.timeline > li .fa {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 40px;
+  background-color: #449ece;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #afdcf8;
+  text-align: center;
+  left: 17%;
+  top: 8%; }
